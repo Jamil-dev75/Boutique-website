@@ -3,28 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Boutique Website</title>
 <style>
+    :root {
+        --main-color: darksalmon;
+    }
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-
-:root {
-    --main-color: darksalmon;
-}
 body {
     
     font-family: Arial, 
     Helvetica, sans-serif;
-    background: url(images/images\ \(10\).jpeg);
+    background: url(images/bc-img.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    
-    
-
+   
 }
 .container {
     width: 80%;
@@ -35,7 +32,6 @@ ul {
     margin: 0;
     padding: 20px;
     background-color: black;
-    margin-top: 10px;
     margin-bottom: 28px;
     text-align: center;
     
@@ -46,8 +42,7 @@ ul li  {
     background-color: darksalmon;
     border-radius: 6px;
     padding: 15px;
-    text-align: center;
-    margin-top: 10px;  
+    text-align: center;  
     margin-left: 8rem;
     padding: 10px;
     font-size: 25px;
@@ -101,61 +96,17 @@ h1 {
     margin-left: 20px;
 }
 
-.card-1 {
-    position: relative;
-    width: 300px;    
-    height: 250px;
-    border: none;
-}
-
-.card-1:hover {
-    box-shadow: 0 0 7px rgb(238, 196, 196);
-    
-}
-.card-2:hover {
-    box-shadow: 0 0 7px rgb(238, 196, 196);
-    
-}
-.card-3:hover {
-    box-shadow: 0 0 7px rgb(238, 196, 196);
-    
-}
-.card-4:hover {
-    box-shadow: 0 0 7px rgb(238, 196, 196);
-    
-}
-.card-5:hover {
-    box-shadow: 0 0 7px rgb(238, 196, 196);
-    
-}
-
-.card-2 {
+.card {
     position: relative;
     width: 300px;    
     height: 250px;  
     border: none;
 }
-.card-3 {
-    position: relative;
-    width: 300px;    
-    height: 250px;
-    border: none;
-}
-.card-4 {
-    
-    position: relative;
-    width: 300px;    
-    height: 250px;    
-    border: none;
-}
-.card-5 {
-    
-    position: relative;
-    width: 300px;    
-    height: 250px;
-    border: none;
-}
 
+.card:hover {
+    box-shadow: 0 0 7px rgb(238, 196, 196);
+    
+}
 
 .price {
     font-size: 25px;
@@ -196,12 +147,20 @@ span img {
     height:55px;
 }
 
+@media(max-width:768px) {
+.container {
+    width: 100%;
+    flex-direction: column;
+    font-size:18px;
+}
+}
+
 </style>
 </head>
 <body>
     <ul>
-        <li><a href="Home">Home</a></li>
-        <li><a href="About">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#About">About</a></li>
         <li><a href="service">Services</a></li>
         <li><a href="Shop">Shop</a></li><span><img src="images/10956581.png" alt=""></span>
 
@@ -217,34 +176,34 @@ span img {
         you deserve to look and feel your best, always.</p>
 </header>
     <div class="cards">
-        <div class="card-1">
-            <img src="images/download (1).webp" alt="">
+        <div class="card">
+            <img src="images/download-1.webp" alt="a beautiful glass">
             <div class="price">$100</div>
             <button>Order Now</button>
         </div>
-        <div class="card-2">
+        <div class="card">
             
-            <img src="images/download (2).jpeg" alt="">
+            <img src="images/download-2.jpeg" alt="a nice wristwatch">
             <div class="price">$150</div>
             <button>Order Now</button>
         </div>
-        <div class="card-3">
-            <img src="images/download (3).jpeg" alt="">
+        <div class="card">
+            <img src="images/download-3.jpeg" alt="men shoes ">
             <div class="price">$120</div>
             <button>Order Now</button>
         </div>
-        <div class="card-4">
-            <img src="images/download (7).jpeg" alt="">
+        <div class="card">
+            <img src="images/download -7.jpeg" alt="quality bedsheet">
             <div class="price">$180</div>
             <button>Order Now</button>
         </div>
-        <div class="card-5">
-            <img src="images/download (8).jpeg" alt="">
+        <div class="card">
+            <img src="images/download-8.jpeg" alt="nice smelling perfum">
             <div class="price">$50</div>
             <button>Order Now</button>
         </div>
-        <div class="card-5">
-            <img src="images/download.webp" alt="">
+        <div class="card">
+            <img src="images/download.webp" alt="Tshirt and short trouser">
             <div class="price">$100</div>
             <button>Order Now</button>
         </div>
